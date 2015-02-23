@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="gss-not-ready">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      GSS_CONFIG = {
+        worker: "http://the-grid-templates.s3-website-us-west-1.amazonaws.com/gss/dist/worker.js",
+        useWorker: false,
+        fractionalPixels: false,
+        processBeforeSet: function (vars) {
+
+          // Multiline ellipsis
+          (function (vars) {
+            var idx, id, h, lh, y, delta;
+            for (key in vars) {
+              idx = key.indexOf('[--is_multi_ellipse]');
+              if (idx > 0) {
+                id = key.substring(1,idx);
+
+                // adjust height of mutli-line ellispsis wrapper
+                h = vars["$"+id+"[height]"];
+                lh = vars["$"+id+"[line-height]"];
+                if (!lh) {throw new Error("line-height not set for ellipsis, id: " + id)}
+                delta = (h % lh);
+                h = h - delta;
+                vars["$"+id+"[height]"] = h;
+
+                // adjust bottom of ellispsis
+                y = vars["$"+id+"-ellipsis[y]"];
+                vars["$"+id+"-ellipsis[y]"] = y - delta;
+              }
+            }
+          })(vars);
+
+          return vars;
+        }
+      };
+    </script>
+    <!-- fonts -->
+          <script>
+        WebFontConfig = {
+          typekit: {
+                          id: 'pqa5whp'                      },
+          custom: {
+                                        families: ['Founders Grotesk Light: n2, i2', 'Founders Grotesk Regular: n4, i4'],
+              urls: ['http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Light/n2/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Light/i2/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Regular/n4/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Regular/i4/font.css']
+                      },
+          active: function() {
+            var gssScript = document.createElement('script');
+            gssScript.src = 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/gss/dist/gss.js';
+            gssScript.onload = function() { GSS.boot(); };
+
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(gssScript, firstScript);
+          }
+        };
+      </script>
+      <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+        <!-- styles -->
+    <style type="text/css">
+      .gss-not-ready {
+  opacity: 0;
+}
+
+body {
+  background: hsl(220, 4%, 13%);
+}
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed {
+  overflow: hidden;
+}
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background {
+  
+      
+    background-position: center;
+  
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(100%, hsla(0, 0%, 0%, 0.75))),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7e22812c4a9f245719c1d3074bae0e58/gradientmap?input=https%3A%2F%2Ftwitter.com%2Fsamin%2Fstatus%2F569905482334396416&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    */
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+      background-image: -moz-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7e22812c4a9f245719c1d3074bae0e58/gradientmap?input=https%3A%2F%2Ftwitter.com%2Fsamin%2Fstatus%2F569905482334396416&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    */
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+      background-image: -webkit-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7e22812c4a9f245719c1d3074bae0e58/gradientmap?input=https%3A%2F%2Ftwitter.com%2Fsamin%2Fstatus%2F569905482334396416&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    */
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+      background-image: -o-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7e22812c4a9f245719c1d3074bae0e58/gradientmap?input=https%3A%2F%2Ftwitter.com%2Fsamin%2Fstatus%2F569905482334396416&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    */
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+      background-image: -ms-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7e22812c4a9f245719c1d3074bae0e58/gradientmap?input=https%3A%2F%2Ftwitter.com%2Fsamin%2Fstatus%2F569905482334396416&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    */
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+      background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7e22812c4a9f245719c1d3074bae0e58/gradientmap?input=https%3A%2F%2Ftwitter.com%2Fsamin%2Fstatus%2F569905482334396416&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    */
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+  
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -ms-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
+  transform: skewY(4deg);
+}
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background:before {
+  background: hsla(0, 0%, 0%, .3);
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0 {
+  fill: hsla(46, 96%, 81%, 0.2);
+}
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1 {
+  fill: hsl(46, 96%, 81%);
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <style type="text/gss">
+      @v .main-section gap(0);
+
+section {
+  left: >= 0 !require;
+  top: >= 0 !require;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+[baseline] == 15 !require;
+
+#grid {
+  height: >= ::window[height] !require;
+  width: <= 1300 !require;
+
+  top: == 0 !require;
+  left: >= 0 !require;
+  center-x: == ::window[center-x] !require;
+
+  $outer-gap: == ::window[width] / 16;
+$outer-gap: >= 20 !require;  @h |-[::]-| outer-gap(::[$outer-gap]) in(::window) !require;
+
+
+  
+  @grid-cols "c1-c2-c3-c4-c5-c6-c7-c8-c9-c10-c11-c12-c13-c14-c15-c16"    chain-width(::[$col-width]!require) gap(20) !require;
+
+      [c1-left] == "c1"[left] !require;    [c1-right] == "c1"[right] !require;      [c2-left] == "c2"[left] !require;    [c2-right] == "c2"[right] !require;      [c3-left] == "c3"[left] !require;    [c3-right] == "c3"[right] !require;      [c4-left] == "c4"[left] !require;    [c4-right] == "c4"[right] !require;      [c5-left] == "c5"[left] !require;    [c5-right] == "c5"[right] !require;      [c6-left] == "c6"[left] !require;    [c6-right] == "c6"[right] !require;      [c7-left] == "c7"[left] !require;    [c7-right] == "c7"[right] !require;      [c8-left] == "c8"[left] !require;    [c8-right] == "c8"[right] !require;      [c9-left] == "c9"[left] !require;    [c9-right] == "c9"[right] !require;      [c10-left] == "c10"[left] !require;    [c10-right] == "c10"[right] !require;      [c11-left] == "c11"[left] !require;    [c11-right] == "c11"[right] !require;      [c12-left] == "c12"[left] !require;    [c12-right] == "c12"[right] !require;      [c13-left] == "c13"[left] !require;    [c13-right] == "c13"[right] !require;      [c14-left] == "c14"[left] !require;    [c14-right] == "c14"[right] !require;      [c15-left] == "c15"[left] !require;    [c15-right] == "c15"[right] !require;      [c16-left] == "c16"[left] !require;    [c16-right] == "c16"[right] !require;  }
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section {
+  left: == ::window[left] !strong;
+  width: == ::window[width] !strong;
+
+
+  @virtual "header"
+  "header"[top] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section[top];
+  "header"[width] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[width];
+
+  /* Arbitrary value that works for skew value of 4 */
+  "header"[height] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$outer-gap-offset] + ("header"[width] / 18);
+
+
+  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0,#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1 {
+    width: == ::[height];
+  }
+
+  @v |-[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0][#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1]-|
+    outer-gap("header"[height] / 4)
+    in("header")
+    chain-left(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$left])
+    chain-width;
+}
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed {
+  position: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[position];
+  size: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[size];
+  skew-y: == 0 - 4;
+}
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background {
+  top: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[skewed-top];
+  left: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[left];
+  width: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[width];
+  height: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[skewed-height];
+  skew-y: == 4;
+}
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content {
+  $left: == [c1-left];
+  $padding-offset: == ::[width] / 30;
+  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
+  $padding-bottom: == ([baseline] * 6) + ::[$padding-offset];
+
+  $outer-gap-offset: == [baseline] * 2;
+  $outer-gap: == ::[$outer-gap-offset] + ::[$padding-offset];
+
+  @h |[::]| in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section);
+  @v |-[::]| in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section) outer-gap(::[$outer-gap]);
+}
+
+
+
+
+
+
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$ctas-highlights-margin-top] == [baseline] * 4;
+#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$gallery-margin-top] == [baseline] * 3;
+
+
+
+
+  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[height] == (#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section[width] * 9) / 21;
+
+
+
+
+
+    </style>
+    <!-- js -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="grid"></div>
+    
+<section id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section" class="main-section">
+
+      
+    <svg id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="1px" height="1px" viewBox="0 0 1 1">
+      <polygon points=".5,0 1,.5 .5,1 0,.5"/>
+    </svg>
+      
+    <svg id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="1px" height="1px" viewBox="0 0 1 1">
+      <polygon points=".5,0 1,.5 .5,1 0,.5"/>
+    </svg>
+  
+  <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed">
+    <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background"></div>
+  </div>
+
+  <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content">
+    
+    
+        
+
+    
+
+      </div>
+
+</section>
+     <script>
+      document.body.addEventListener('solved', function() {
+        // Provide metrics for vertical skewing
+        (function (vars) {
+          var suggestIfNeeded = function(id, property, value) {
+            var key, roundedVarValue, roundedValue;
+            key = '$' + id + '[' + property + ']';
+            roundedVarValue =  (Math.round(parseFloat(vars[key]) * 100) / 100);
+            roundedValue =  (Math.round(parseFloat(value) * 100) / 100);
+
+            if (roundedVarValue !== roundedValue) {
+              var suggest = window.GSS.engines.root.commander.suggest;
+              suggest('suggest', key, ['number', value]);
+            }
+          };
+
+          for (key in vars) {
+            var propertyName, property;
+            propertyName = 'skew-y';
+            property = '[' + propertyName + ']';
+
+            if (key.slice(property.length * -1) === property) {
+              var id, element;
+              id = key.replace('$', '').replace(property, '');
+              element = document.getElementById(id);
+
+              var y, width, height, skewY;
+              y = vars["$"+id+"[y]"];
+              width = vars["$"+id+"[width]"];
+              height = vars["$"+id+"[height]"];
+              skewY = vars["$"+id+"[skew-y]"];
+
+              var degrees, delta;
+              degrees = Math.abs(skewY) * (Math.PI / 180);
+              delta = Math.tan(degrees) * width;
+
+              // Assumes origin is center point
+              var skewedTop, skewedHeight, skewedBottom;
+              skewedTop = y - (delta / 2);
+              skewedHeight = height + delta;
+              skewedBottom = skewedTop + skewedHeight;
+
+              suggestIfNeeded(id, 'skewed-top', skewedTop);
+              suggestIfNeeded(id, 'skewed-height', skewedHeight);
+              suggestIfNeeded(id, 'skewed-bottom', skewedBottom);
+            }
+          }
+        })(window.GSS.vars);
+      });
+    </script>
+  </body>
+</html>

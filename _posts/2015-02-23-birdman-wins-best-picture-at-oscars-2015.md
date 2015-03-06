@@ -23,7 +23,7 @@
   app_links: []
   isBasedOnUrl: "http://www.nytimes.com/2015/02/23/arts/birdman-wins-best-picture-at-oscars-2015.html?hp&action=click&pgtype=Homepage&module=second-column-region&region=top-news&WT.nav=top-news&_r=0"
   title: "'Birdman' Wins Best Picture at Oscars 2015"
-  dateModified: "2015-02-23T17:18:37.513Z"
+  dateModified: "2015-03-06T19:20:00.112Z"
   sourcePath: "_posts/2015-02-23-birdman-wins-best-picture-at-oscars-2015.md"
   published: true
   _context: "http://schema.org"

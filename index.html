@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html id="u40">
+<html>
 
-  <head id="u9">
-    <meta charset="utf-8" id="u0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" id="u1" /><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js" id="u2"></script><script id="u4">WebFont.load({"google":{"families":["Montserrat:400,700","Roboto:500,500italic,900,900italic"]}});</script><style type="text/css" id="u6">html {font-family: 'Roboto';font-weight: 500;}
- .layout-system .hero {font-family: 'Montserrat';font-weight: 400;}
- .layout-system .title {font-family: 'Montserrat';}
- .layout-system .subtitle {font-family: 'Montserrat';}
- .layout-system .description {font-family: 'Roboto';}
- .layout-system .title {font-weight: 400;}
- .layout-system .subtitle {font-weight: 700;}
- a {font-family: 'Roboto';font-weight: 500;}
- .attribution {font-family: 'Roboto';font-weight: 500;text-transform: uppercase;letter-spacing: .03em;}
- .layout-system .quote {font-family: 'Montserrat';font-weight: 400;font-style: italic;}
- .layout-system .title {text-transform: uppercase;letter-spacing: .03em;}</style><style type="text/css">
-  html {
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="the-grid-solution" content=" " /><style type="text/css">
+  .box-sizing {
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
   width: 100%;
 }
 body {
@@ -33,11 +30,39 @@ body:after {
   opacity: .2;
   z-index: -1;
 }
+@media screen and (max-width: 720px) {
+  body:after {
+    display: none;
+  }
+}
 body a,
 body .cta {
   color: #cccccc;
-  word-wrap: break-word;
   text-decoration: none;
+  display: inline-block;
+}
+body a:hover *,
+body .cta:hover * {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  transition-transition-timing-function: linear;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  opacity: .8;
 }
 *,
 *:before,
@@ -55,411 +80,195 @@ body .cta {
   padding: 0;
   margin: 0;
 }
-.center-line {
-  position: fixed;
-  left: 50%;
-  height: 100%;
-  border-left: 1px solid #dddddd;
-  opacity: .3;
-  top: 0;
-}
-article.post .cover img {
-  background-size: contain;
-  background-position: center;
-}
 article.post .title {
   color: #aaaaaa;
-  text-align: center;
-  line-height: 1em;
 }
 article.post .description {
   color: #bbbbbb;
 }
+article.post .overlay {
+  opacity: 0.06;
+}
 article.post .attribution .source {
-  text-align: center;
   color: #dddddd;
 }
-article.post .attribution .author {
-  text-align: center;
-}
 article.post .attribution .name {
-  text-align: center;
   color: #bbbbbb;
 }
 article.post .attribution .avatar {
   background-size: cover;
-  border-radius: 30px;
-  opacity: .6;
 }
-article.post .text {
-  text-align: center;
+svg text,
+svg path {
+  fill: #aaaaaa;
 }
 
 </style><style id="gss-precomputed">
 @media (max-width: 720px) {
-#grid{font-size: 0.16rem;}
-#grid>div:nth-of-type(1){font-size: 0.16rem;}
+#u20{font-size: 0.16rem;}
+#u20:before{content: ""; display: none;}
+#u19{font-size: 0.16rem;}
+#ua345623f-9fb5-4deb-94a6-cf223d493b26{font-size: 0.16rem;}
+#u5{font-size: 0.16rem;}
+#u3{font-size: 0.16rem;}
+#u2{font-size: 0.1872rem;}
 
-#grid>div:nth-of-type(2){font-size: 0.16rem;}
+#u4{font-size: 0.24rem;}
 
-#grid>div:nth-of-type(3){font-size: 0.16rem;}
+#u6{font-size: 0.16rem;}
 
-#grid>div:nth-of-type(4){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(5){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(6){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(7){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(8){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(9){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(10){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(11){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(12){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(13){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(14){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(15){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(16){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(17){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(18){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(19){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(20){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(21){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(22){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(23){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(24){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(25){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(26){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(27){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(28){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(29){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(30){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(31){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(32){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(33){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(34){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(35){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(36){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(37){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(38){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(39){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(40){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(41){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(42){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(43){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(44){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(45){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(46){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(47){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(48){font-size: 0.16rem;}
-
-#u35{font-size: 0.16rem;}
-#u35:before{content: "377,814"; display: none;}
-#u34{font-size: 0.16rem;}
-#u2b84a26a-b2d9-490e-8313-85c8b6ddcd3b{font-size: 0.16rem;}
-#u15{font-size: 0.16rem;}
-#u13{font-size: 0.16rem;}
-#u12{font-size: 0.1872rem;}
-
-#u14{font-size: 0.24rem;}
+#u15{overflow: hidden;;font-size: 0.16rem;}
+#u10{font-size: 0.16rem;}
+#u9{height: 1.8rem; width: 2.4rem; position: absolute; top: -0.19rem; left: 0rem;;font-size: 0.16rem;}
 
 #u17{font-size: 0.16rem;}
+#u17>img:nth-of-type(1){font-size: 0.16rem;}
 
-#u26{overflow: hidden; height: 1.686rem; width: 1.954rem; position: absolute; left: -0.976rem; top: 0rem;;font-size: 0.16rem;}
 #u21{font-size: 0.16rem;}
-#u20{height: 2.134rem; width: 3.2rem; position: absolute; top: -1.98rem; left: 0rem;;font-size: 0.16rem;}
-
-#u28{font-size: 0.16rem;}
-#u28>article:nth-of-type(1){font-size: 0.16rem;}
-#u28>article:nth-of-type(1)>h1:nth-of-type(1){font-size: 0.16rem;}
-
-#u28>article:nth-of-type(1)>p:nth-of-type(1){font-size: 0.16rem;}
-
-#u28>article:nth-of-type(1)>img:nth-of-type(1){font-size: 0.16rem;}
-
-#u32{font-size: 0.16rem;}
-#u31{font-size: 0.16rem;}
-#u30{font-size: 0.16rem;}
 
 }
 @media (min-width: 721px) {
-#grid{font-size: 0.16rem;}
-#grid>div:nth-of-type(1){font-size: 0.16rem;}
+#u20{font-size: 0.16rem;}
+#u20:before{content: ""; display: none;}
+#u19{font-size: 0.16rem;}
+#ua345623f-9fb5-4deb-94a6-cf223d493b26{font-size: 0.16rem;}
+#u5{font-size: 0.16rem;}
+#u3{font-size: 0.16rem;}
+#u2{font-size: 0.1872rem;}
 
-#grid>div:nth-of-type(2){font-size: 0.16rem;}
+#u4{font-size: 0.24rem;}
 
-#grid>div:nth-of-type(3){font-size: 0.16rem;}
+#u6{font-size: 0.16rem;}
 
-#grid>div:nth-of-type(4){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(5){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(6){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(7){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(8){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(9){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(10){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(11){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(12){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(13){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(14){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(15){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(16){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(17){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(18){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(19){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(20){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(21){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(22){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(23){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(24){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(25){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(26){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(27){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(28){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(29){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(30){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(31){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(32){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(33){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(34){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(35){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(36){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(37){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(38){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(39){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(40){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(41){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(42){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(43){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(44){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(45){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(46){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(47){font-size: 0.16rem;}
-
-#grid>div:nth-of-type(48){font-size: 0.16rem;}
-
-#u35{font-size: 0.16rem;}
-#u35:before{content: "377,814"; display: none;}
-#u34{font-size: 0.16rem;}
-#u2b84a26a-b2d9-490e-8313-85c8b6ddcd3b{font-size: 0.16rem;}
-#u15{font-size: 0.16rem;}
-#u13{font-size: 0.16rem;}
-#u12{font-size: 0.1872rem;}
-
-#u14{font-size: 0.24rem;}
+#u15{overflow: hidden;;font-size: 0.16rem;}
+#u10{font-size: 0.16rem;}
+#u9{height: 1.8rem; width: 2.4rem; position: absolute; top: -0.19rem; left: 0rem;;font-size: 0.16rem;}
 
 #u17{font-size: 0.16rem;}
+#u17>img:nth-of-type(1){font-size: 0.16rem;}
 
-#u26{overflow: hidden; height: 1.686rem; width: 1.954rem; position: absolute; left: -0.976rem; top: 0rem;;font-size: 0.16rem;}
 #u21{font-size: 0.16rem;}
-#u20{height: 2.134rem; width: 3.2rem; position: absolute; top: -1.98rem; left: 0rem;;font-size: 0.16rem;}
 
-#u28{font-size: 0.16rem;}
-#u28>article:nth-of-type(1){font-size: 0.16rem;}
-#u28>article:nth-of-type(1)>h1:nth-of-type(1){font-size: 0.16rem;}
+}</style><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script><script>WebFont.load({"google":{"families":["Slabo 27px","Roboto:400,400italic,700,700italic"]}});</script><style type="text/css">html {font-family: 'Roboto';font-weight: 400;}
+ .layout-system .hero {font-family: 'Slabo 27px';font-weight: 400;}
+ .layout-system .title {font-family: 'Slabo 27px';}
+ .layout-system .subtitle {font-family: 'Slabo 27px';}
+ .layout-system .description {font-family: 'Roboto';}
+ .layout-system .title {font-weight: 400;}
+ .layout-system .subtitle {font-weight: 400;}
+ a {font-family: 'Roboto';font-weight: 700;}
+ .attribution {font-family: 'Roboto';font-weight: 700;text-transform: uppercase;letter-spacing: .03em;}
+ .layout-system .quote {font-family: 'Slabo 27px';font-weight: 400;font-style: normal;}
+ .layout-system .title {text-transform: uppercase;letter-spacing: .07em;}</style></head>
 
-#u28>article:nth-of-type(1)>p:nth-of-type(1){font-size: 0.16rem;}
-
-#u28>article:nth-of-type(1)>img:nth-of-type(1){font-size: 0.16rem;}
-
-#u32{font-size: 0.16rem;}
-#u31{font-size: 0.16rem;}
-#u30{font-size: 0.16rem;}
-
-}</style></head>
-
-  <body id="u39">
-    <div id="grid">
-      <div class="col1"></div>
-      <div class="col2"></div>
-      <div class="col3"></div>
-      <div class="col4"></div>
-      <div class="col5"></div>
-      <div class="col6"></div>
-      <div class="col7"></div>
-      <div class="col8"></div>
-      <div class="col9"></div>
-      <div class="col10"></div>
-      <div class="col11"></div>
-      <div class="col12"></div>
-      <div class="col13"></div>
-      <div class="col15"></div>
-      <div class="col16"></div>
-      <div class="col17"></div>
-      <div class="col18"></div>
-      <div class="col19"></div>
-      <div class="col20"></div>
-      <div class="row1"></div>
-      <div class="row2"></div>
-      <div class="row3"></div>
-      <div class="row4"></div>
-      <div class="row5"></div>
-      <div class="row6"></div>
-      <div class="row7"></div>
-      <div class="row8"></div>
-      <div class="row9"></div>
-      <div class="row10"></div>
-      <div class="row11"></div>
-      <div class="row12"></div>
-      <div class="row13"></div>
-      <div class="row15"></div>
-      <div class="row16"></div>
-      <div class="row17"></div>
-      <div class="row18"></div>
-      <div class="row19"></div>
-      <div class="row20"></div>
-      <div class="row21"></div>
-      <div class="row22"></div>
-      <div class="row23"></div>
-      <div class="row24"></div>
-      <div class="row25"></div>
-      <div class="row26"></div>
-      <div class="row27"></div>
-      <div class="row28"></div>
-      <div class="row29"></div>
-      <div class="row30"></div>
-    </div>
-    <div class="layout-system computed fallback sections" id="u35">
-      <section class="section-fallback section left" id="u34">
-        <article class="post" id="u2b84a26a-b2d9-490e-8313-85c8b6ddcd3b">
-          <div class="titles" id="u15">
-            <a href="https://open.bufferapp.com/mastering-organic-efficiency-startups-can-learn-nature/?utm_content=bufferf8901&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" id="u13">
-              <h1 class="title text" id="u12">Mastering Organic Efficiency&colon; What Startups Can Learn From Nature - Open</h1>
+  <body id="u22"><script src="//cdn.thegrid.io/design-systems/taylor/0.0.57/src/assets/gss-init.js" id="u0"></script>
+    <!-- <div id="grid">
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col3"></div>
+  <div class="col4"></div>
+  <div class="col5"></div>
+  <div class="col6"></div>
+  <div class="col7"></div>
+  <div class="col8"></div>
+  <div class="col9"></div>
+  <div class="col10"></div>
+  <div class="col11"></div>
+  <div class="col12"></div>
+  <div class="col13"></div>
+  <div class="col15"></div>
+  <div class="col16"></div>
+  <div class="col17"></div>
+  <div class="col18"></div>
+  <div class="col19"></div>
+  <div class="col20"></div>
+  <div class="row1"></div>
+  <div class="row2"></div>
+  <div class="row3"></div>
+  <div class="row4"></div>
+  <div class="row5"></div>
+  <div class="row6"></div>
+  <div class="row7"></div>
+  <div class="row8"></div>
+  <div class="row9"></div>
+  <div class="row10"></div>
+  <div class="row11"></div>
+  <div class="row12"></div>
+  <div class="row13"></div>
+  <div class="row15"></div>
+  <div class="row16"></div>
+  <div class="row17"></div>
+  <div class="row18"></div>
+  <div class="row19"></div>
+  <div class="row20"></div>
+  <div class="row21"></div>
+  <div class="row22"></div>
+  <div class="row23"></div>
+  <div class="row24"></div>
+  <div class="row25"></div>
+  <div class="row26"></div>
+  <div class="row27"></div>
+  <div class="row28"></div>
+  <div class="row29"></div>
+  <div class="row30"></div>
+</div> -->
+    <div class="layout-system computed fallback sections" id="u20">
+      <section class="section-fallback left section" id="u19">
+        <article class="post" id="ua345623f-9fb5-4deb-94a6-cf223d493b26">
+          <div class="titles" id="u5">
+            <a href="https://dribbble.com/shots/2050076-Newsletter-Units?list=shots&offset=15&sort=popular&timeframe=now" id="u3">
+              <h1 class="title text" id="u2"></h1>
             </a>
-            <h2 class="subtitle text" id="u14"></h2>
+            <h2 class="subtitle text" id="u4"></h2>
           </div>
-          <p class="description text" id="u17">In a forest&comma; there is absolutely no waste&period; Every single element is reused in a continuous cycle&period; A tree produces leaves&period; The leaves fall to the ground and become compost&period; And the forest uses every last ounce of the compost and puts it back into its ecosystem&period;</p>
-          <div class="cover image" id="u26"><style type="text/gss" scoped="scoped" id="u19">overflow: hidden;
-"viewport"[top] == &top  !require;
-"viewport"[left] == &left  !require;
-"viewport"[height] == &height  !require;
-"viewport"[width] == &width  !require;
+          <p class="description text" id="u6"></p>
+          <div class="cover image" id="u15"><style type="text/gss" scoped="scoped" id="u8">overflow: hidden;
+"viewport"[top] == &top px  !require;
+"viewport"[left] == &left  px !require;
+"viewport"[height] == &height px  !require;
+"viewport"[width] == &width  px !require;
 
-@v |~("viewport")~| in(img) !require;
-@h |~("viewport")~| in(img) !require;
+@v |~[cover-v-gap]~("viewport")~[cover-v-gap]~| in(img) !strong900;
+@h |~[cover-h-gap]~("viewport")~[cover-h-gap]~| in(img) !strong900;
 
-image-min-scale = 0.2;
+cover-h-gap == 0 !strong;
+cover-v-gap == 0 !strong;
+
+image-min-scale = 0.3;
 image-max-scale = 1;
 
 /* Define image dimensions and ratio */
-image-scale == img[width] / 1600 !require;
-img[height] == img[width] * (1067/1600) !require;
+image-scale == img[width] / 800 !require;
+img[height] == img[width] * (600/800) !require;
 
 /* enforce minimum scale*/
-img[height] >= 1067 * image-min-scale !require;
-img[height] <= 1067 * image-max-scale !require;</style>
-            <a href="https://open.bufferapp.com/mastering-organic-efficiency-startups-can-learn-nature/?utm_content=bufferf8901&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" id="u21">
-              <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0101623f66f7e3850432f27c9b5a1929/passthrough.jpg?input=https%3A%2F%2Fopen.bufferapp.com%2Fwp-content%2Fuploads%2F2015%2F02%2Ftrees-forest-in-the-snow.jpg&width=1600&height=1067" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d0ceda3fde443db3dcbb76ac9b2599ea/passthrough.jpg?input=https%3A%2F%2Fopen.bufferapp.com%2Fwp-content%2Fuploads%2F2015%2F02%2Ftrees-forest-in-the-snow.jpg&width=720&height=480.15 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/6a6c739eba5e01462739c10dc68d141c/passthrough.jpg?input=https%3A%2F%2Fopen.bufferapp.com%2Fwp-content%2Fuploads%2F2015%2F02%2Ftrees-forest-in-the-snow.jpg&width=1440&height=960.3 1440w" sizes="sizes='(min-width: 1400px) 1400px, 100vw'" id="u20" />
-            </a><style type="text/gss" scoped="scoped" id="u23">/* define  blank spot */
+img[height] >= 600 * image-min-scale !require;
+img[height] <= 600 * image-max-scale !require;</style>
+            <a href="https://dribbble.com/shots/2050076-Newsletter-Units?list=shots&offset=15&sort=popular&timeframe=now" id="u10">
+              <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/52079b291b5be94e14dc1d1afd0fdbec/passthrough.png?input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F51466%2Fscreenshots%2F2050076%2Fnewsletter-units.png&width=800&height=600" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7802a23067203505a4459e8753cc25f7/passthrough.png?input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F51466%2Fscreenshots%2F2050076%2Fnewsletter-units.png&width=720&height=540 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/52079b291b5be94e14dc1d1afd0fdbec/passthrough.png?input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F51466%2Fscreenshots%2F2050076%2Fnewsletter-units.png&width=800&height=600 800w" sizes="sizes='(min-width: 1400px) 1400px, 100vw'" id="u9" />
+            </a><style type="text/gss" scoped="scoped" id="u12">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
-"space"[width] ==  484 * image-scale !require;
-"space"[height] == 464 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u25">/* define  area of importance */
-"scene"[x] == img[x] + 488 * image-scale !require;
-"scene"[y] == img[y] + 1 * image-scale !require;
-"scene"[width] ==  1 * image-scale !require;
-"scene"[height] == 841 * image-scale !require;
+"space"[width] ==  189 * image-scale !require;
+"space"[height] == 580 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u14">/* define  area of importance */
+"scene"[x] == img[x] + 193 * image-scale !require;
+"scene"[y] == img[y] + 36 * image-scale !require;
+"scene"[width] ==  414 * image-scale !require;
+"scene"[height] == 530 * image-scale !require;
 
 /* Keep saliency towards original position */
 "scene"[center-x] == "viewport"[center-x];
-"scene"[center-y] == "viewport"[center-y];</style></div>
-          <div class="html" id="u28">
-            <article>
-              <h1>Mastering Organic Efficiency&colon; What Startups Can Learn From Nature - Open</h1>
-              <p>In a forest&comma; there is absolutely no waste&period; Every single element is reused in a continuous cycle&period; A tree produces leaves&period; The leaves fall to the ground and become compost&period; And the forest uses every last ounce of the compost and puts it back into its ecosystem&period;</p>
-              <img src="https://open.bufferapp.com/wp-content/uploads/2015/02/trees-forest-in-the-snow.jpg">
-            </article>
-          </div>
-          <div class="attribution" id="u32">
-            <div class="publisher source" id="u31">
-              <a href="https://open.bufferapp.com" id="u30">Open</a>
-            </div>
+"scene"[center-y] == "viewport"[center-y];
+
+@v |~("scene")~| in("viewport");
+@h |~("scene")~| in("viewport");</style></div>
+          <div class="html" id="u17">
+            <img src="https://d13yacurqjgara.cloudfront.net/users/51466/screenshots/2050076/newsletter-units.png">
           </div>
         </article>
       </section>
-    </div><script src="//rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u36"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.23/src/assets/gss-init.js" id="u37"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.23/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u38"></script></body>
+    </div>
+    <div id="u21"></div>
+  </body>
 
 </html>

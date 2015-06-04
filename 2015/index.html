@@ -1,17 +1,187 @@
-<!DOCTYPE html>
-<html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="the-grid-solution" content="0fbc2bce-030a-42a6-a8ae-5e0ca701c059"/><link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/layouts/shared/assets/css/font/Icons/Icons.css"/><link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/layouts/shared/assets/css/scale/mini.css" media="(max-width: 19.9375em)"/><link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/layouts/shared/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em)"/><link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/layouts/shared/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)"/><link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/layouts/shared/assets/css/scale/large.css" media="(min-width: 90.0625em)"/><style type="text/css">html {
+  width: 100%;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+}
+body:after {
+  content: "";
+  position: fixed;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  opacity: .2;
+  z-index: -1;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body a,
+body .cta {
+  text-decoration: none;
+}
+body .media > a {
+  display: inline-block;
+}
+body h1 a,
+body h2 a,
+body h3 a {
+  color: inherit;
+}
+*,
+*:before,
+*:after {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.decoration > svg {
+  display: block;
+}
+.group .title,
+.group a {
+  line-height: 1em;
+}
+.group .attribution {
+  white-space: nowrap;
+}
+.group .attribution .source {
+  display: inline-block;
+}
+.group .attribution .publisher {
+  display: inline-block;
+}
+.group .attribution .publisher a {
+  color: inherit;
+}
+.group .attribution .author {
+  display: inline-block;
+  font-weight: bold;
+  color: inherit;
+}
+.group .attribution .name {
+  font-weight: bold;
+  color: inherit;
+}
+.group .attribution .avatar {
+  opacity: .6;
+  display: inline-block;
+  vertical-align: middle;
+}
+.group .attribution .avatar img,
+.group .attribution .avatar a {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.group .overlay {
+  opacity: 0.3;
+}
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="the-grid-solution" content=" " />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/css/font/Icons/Icons.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
-  
-/*
+
+.global-colors.base-light-color-1.base .base-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-1.title-color-1 .title-color { color: hsl(0, 0%, 20%); } 
+.global-colors.base-light-color-1.title-color-2 .title-color { color: hsl(0, 0%, 44%); } 
+.global-colors.base-light-color-1.title-color-3 .title-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-1.title-color-4 .title-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-1.title-color-5 .title-color { color: hsl(0, 0%, 80%); } 
+.global-colors.base-light-color-1.title-color-6 .title-color { color: hsl(0, 55%, 47%); } 
+.global-colors.base-light-color-1.bg .bg-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-1.box .box-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-1.text-color-1 .text-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-1.text-color-2 .text-color { color: hsl(0, 0%, 50%); } 
+.global-colors.base-light-color-1.meta .meta-color { color: hsl(0, 0%, 70%); } 
+.global-colors.base-light-color-1.boxPop-color-1 .boxPop-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-1.boxPop-color-2 .boxPop-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-1.boxPop-color-3 .boxPop-color { background-color: hsl(0, 75%, 55%); } 
+.global-colors.base-light-color-1.textPop-color-1 .textPop-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-1.textPop-color-2 .textPop-color { color: hsl(0, 0%, 80%); } 
+.global-colors.base-light-color-1.textPop-color-3 .textPop-color { color: hsl(0, 55%, 47%); } 
+.global-colors.base-light-color-1.heading .heading-color { color: hsl(0, 0%, 20%); } 
+.global-colors.base-light-color-1.prime .prime-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-1.primeText .primeText-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-1.meta_highlight .meta_highlight-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.base .base-color { background-color: hsl(0, 8%, 95%); } 
+.global-colors.base-light-color-2.title-color-1 .title-color { color: hsl(0, 0%, 20%); } 
+.global-colors.base-light-color-2.title-color-2 .title-color { color: hsl(0, 0%, 43%); } 
+.global-colors.base-light-color-2.title-color-3 .title-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.title-color-4 .title-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.title-color-5 .title-color { color: hsl(0, 0%, 80%); } 
+.global-colors.base-light-color-2.title-color-6 .title-color { color: hsl(0, 55%, 47%); } 
+.global-colors.base-light-color-2.bg .bg-color { background-color: hsl(0, 8%, 97%); } 
+.global-colors.base-light-color-2.box .box-color { background-color: hsl(0, 8%, 95%); } 
+.global-colors.base-light-color-2.text-color-1 .text-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.text-color-2 .text-color { color: hsl(0, 0%, 48%); } 
+.global-colors.base-light-color-2.meta .meta-color { color: hsl(0, 1%, 66%); } 
+.global-colors.base-light-color-2.boxPop-color-1 .boxPop-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.boxPop-color-2 .boxPop-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-2.boxPop-color-3 .boxPop-color { background-color: hsl(0, 75%, 55%); } 
+.global-colors.base-light-color-2.textPop-color-1 .textPop-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.textPop-color-2 .textPop-color { color: hsl(0, 0%, 80%); } 
+.global-colors.base-light-color-2.textPop-color-3 .textPop-color { color: hsl(0, 55%, 47%); } 
+.global-colors.base-light-color-2.heading .heading-color { color: hsl(0, 0%, 20%); } 
+.global-colors.base-light-color-2.prime .prime-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-light-color-2.primeText .primeText-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-light-color-2.meta_highlight .meta_highlight-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.base .base-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.title-color-1 .title-color { color: hsl(0, 0%, 90%); } 
+.global-colors.base-dark-color-1.title-color-2 .title-color { color: hsl(0, 0%, 63%); } 
+.global-colors.base-dark-color-1.title-color-3 .title-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-1.title-color-4 .title-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-1.title-color-5 .title-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.title-color-6 .title-color { color: hsl(0, 68%, 79%); } 
+.global-colors.base-dark-color-1.bg .bg-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.box .box-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.text-color-1 .text-color { color: hsl(0, 0%, 95%); } 
+.global-colors.base-dark-color-1.text-color-2 .text-color { color: hsl(0, 0%, 66%); } 
+.global-colors.base-dark-color-1.meta .meta-color { color: hsl(0, 0%, 29%); } 
+.global-colors.base-dark-color-1.boxPop-color-1 .boxPop-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-1.boxPop-color-2 .boxPop-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.boxPop-color-3 .boxPop-color { background-color: hsl(0, 75%, 55%); } 
+.global-colors.base-dark-color-1.textPop-color-1 .textPop-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-1.textPop-color-2 .textPop-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.textPop-color-3 .textPop-color { color: hsl(0, 68%, 79%); } 
+.global-colors.base-dark-color-1.heading .heading-color { color: hsl(0, 0%, 90%); } 
+.global-colors.base-dark-color-1.prime .prime-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-1.primeText .primeText-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-1.meta_highlight .meta_highlight-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-2.base .base-color { background-color: hsl(0, 8%, 15%); } 
+.global-colors.base-dark-color-2.title-color-1 .title-color { color: hsl(0, 0%, 90%); } 
+.global-colors.base-dark-color-2.title-color-2 .title-color { color: hsl(0, 1%, 68%); } 
+.global-colors.base-dark-color-2.title-color-3 .title-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-2.title-color-4 .title-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-2.title-color-5 .title-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-2.title-color-6 .title-color { color: hsl(0, 68%, 79%); } 
+.global-colors.base-dark-color-2.bg .bg-color { background-color: hsl(0, 8%, 10%); } 
+.global-colors.base-dark-color-2.box .box-color { background-color: hsl(0, 8%, 15%); } 
+.global-colors.base-dark-color-2.text-color-1 .text-color { color: hsl(0, 0%, 95%); } 
+.global-colors.base-dark-color-2.text-color-2 .text-color { color: hsl(0, 1%, 71%); } 
+.global-colors.base-dark-color-2.meta .meta-color { color: hsl(0, 3%, 39%); } 
+.global-colors.base-dark-color-2.boxPop-color-1 .boxPop-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-2.boxPop-color-2 .boxPop-color { background-color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-2.boxPop-color-3 .boxPop-color { background-color: hsl(0, 75%, 55%); } 
+.global-colors.base-dark-color-2.textPop-color-1 .textPop-color { color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-2.textPop-color-2 .textPop-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-2.textPop-color-3 .textPop-color { color: hsl(0, 68%, 79%); } 
+.global-colors.base-dark-color-2.heading .heading-color { color: hsl(0, 0%, 90%); } 
+.global-colors.base-dark-color-2.prime .prime-color { background-color: hsl(0, 0%, 100%); } 
+.global-colors.base-dark-color-2.primeText .primeText-color { color: hsl(0, 0%, 0%); } 
+.global-colors.base-dark-color-2.meta_highlight .meta_highlight-color { color: hsl(0, 0%, 100%); } 
+
+</style><style type="text/css">/*
 html:not(.gss-ready) {
   opacity: 0;
 }
@@ -22,77 +192,99 @@ html:not(.gss-ready) {
   padding: 0;
   outline: none;
 }
-</style><style id="gss-precomputed">
-@media (max-width: 720px) {
-#u35{position: relative; display: block; width: 7.2rem; margin-top: 1.44rem; margin-bottom: 1.44rem; top: 0rem; left: 0rem; height: 28.44rem;;}
-#u35 .stack { display: inline-block; }
+</style><style id="gss-precomputed">@media (max-width:720px) {
 
-#u18{height: 14.42rem; width: 2.88rem; position: absolute; top: 0rem; left: 0.36rem;;}
-#u18 .group.mixed .title { z-index: 2; }
-#u18 .group.mixed { text-align: left; }
+#bodybase-div-0-wrapper-3383251 .stack { display: inline-block; }
 
-#u17{height: 14.42rem; width: 2.88rem; position: absolute; top: 0rem; left: 0rem;;}
-#u11{overflow: hidden; height: 3.6rem; width: 1.44rem; position: absolute; top: 0.72rem; left: 0.72rem;;}
-#u6{color: rgb(0, 0, 238);}
-#u5{height: 3.6rem; width: 4.8rem; position: absolute; top: 0rem; left: -1.84rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466 {height: 11.21rem; width: 2.88rem; position: absolute; top: 0rem; left: 0.36rem;; }
+#u-df626904-7bef-4629-af5f-29c5444a2466 .group.mixed .title { z-index: 2; }
+#u-df626904-7bef-4629-af5f-29c5444a2466 .group.mixed { text-align: left; }
 
-#u14{font-size: 0.48rem; line-height: 0.56rem; width: 1.44rem; position: absolute; top: 12.56rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
-#u13{line-height: 0.5600rem;;color: rgb(0, 0, 238);font-family: Roboto;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed{width: 5.04rem; height: 11.21rem; position: absolute; top: 0rem; left: -2.16rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution{position: absolute; top: 9.52rem; left: 1.66rem;;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-author{font-weight: bold;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-author-a-0{line-height: 0.1600rem;;}
 
-#u16{font-size: 0.28rem; line-height: 0.36rem; width: 1.44rem; position: absolute; top: 4.48rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: normal;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-publisher{line-height: 0.2500rem;;font-weight: normal;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-publisher-a-0{line-height: 0.1600rem;;font-weight: 500;}
 
-#u34{height: 21.23rem; width: 2.88rem; position: absolute; top: 7.21rem; left: 3.96rem;;line-height: normal;}
-#u34 .group.mixed .title { z-index: 2; }
-#u34 .group.mixed { text-align: left; }
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-title{font-size: 0.48rem; line-height: 0.56rem; width: 3.6rem; position: absolute; top: 8.24rem; left: 0.72rem;;letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-title-a-0{line-height: 0.4800rem;;font-family: Roboto;font-weight: 500;}
 
-#u33{height: 21.23rem; width: 2.88rem; position: absolute; top: 0rem; left: 0rem;;}
-#u27{overflow: hidden; height: 3.6rem; width: 1.44rem; position: absolute; top: 0.72rem; left: 0.72rem;;}
-#u22{color: rgb(0, 0, 238);}
-#u21{height: 3.6rem; width: 3.6rem; position: absolute; top: 0rem; left: -1.09rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-t-description{font-size: 0.28rem; line-height: 0.36rem; width: 3.6rem; position: absolute; left: 0.72rem; top: 5.2rem;;letter-spacing: normal;font-weight: normal;}
 
-#u30{font-size: 0.48rem; line-height: 0.56rem; width: 1.44rem; position: absolute; top: 16.52rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
-#u29{line-height: 0.5600rem;;color: rgb(0, 0, 238);font-family: Roboto;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover{overflow: hidden; height: 3.6rem; width: 3.6rem; position: absolute; top: 1.44rem; left: 0.72rem;;line-height: 0.2500rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover-a-0{line-height: 0.1600rem;;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover-a-0-img-0{height: 3.61rem; width: 4.81rem; position: absolute; top: -0.18rem; left: -0.76rem;;font-weight: normal;}
 
-#u32{font-size: 0.28rem; line-height: 0.36rem; width: 1.44rem; position: absolute; top: 4.48rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: normal;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b {height: 13.77rem; width: 2.88rem; position: absolute; top: 11.21rem; left: 0.36rem;;line-height: 0.2500rem;; }
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b .group.mixed .title { z-index: 2; }
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b .group.mixed { text-align: left; }
 
-#u38{line-height: normal;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed{width: 5.04rem; height: 13.77rem; position: absolute; top: 0rem; left: -2.16rem;;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution{position: absolute; top: 12.08rem; left: 2.18rem;;font-weight: 500;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution-a-publisher{font-weight: normal;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution-a-publisher-a-0{line-height: 0.1600rem;;font-weight: 500;}
+
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-title{font-size: 0.48rem; line-height: 0.56rem; width: 3.6rem; position: absolute; top: 9.68rem; left: 0.72rem;;letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-title-a-0{line-height: 0.4800rem;;font-family: Roboto;font-weight: 500;}
+
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-t-description{font-size: 0.28rem; line-height: 0.36rem; width: 3.6rem; position: absolute; left: 0.72rem; top: 5.2rem;;letter-spacing: normal;font-weight: normal;}
+
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover{overflow: hidden; height: 3.6rem; width: 3.6rem; position: absolute; top: 1.44rem; left: 0.72rem;;line-height: 0.2500rem;;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover-a-0{line-height: 0.1600rem;;font-weight: 500;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover-a-0-img-0{height: 3.6rem; width: 3.6rem; position: absolute; top: -0.18rem; left: 0rem;;font-weight: normal;}
+
+#u49{line-height: 0.2500rem;;}
 
 }
 @media (min-width: 721px) {
-#u35{position: relative; display: block; width: 14.4rem; margin-top: 1.44rem; margin-bottom: 1.44rem; top: 0rem; left: 0rem; height: 14.28rem;;}
-#u35 .stack { display: inline-block; }
 
-#u18{height: 8.66rem; width: 6.48rem; position: absolute; top: 0rem; left: 0.36rem;;}
-#u18 .group.mixed .title { z-index: 2; }
-#u18 .group.mixed { text-align: left; }
+#bodybase-div-0-wrapper-3117113 .stack { display: inline-block; }
 
-#u17{height: 8.66rem; width: 6.48rem; position: absolute; top: 0rem; left: 0rem;;}
-#u11{overflow: hidden; height: 3.6rem; width: 5.04rem; position: absolute; top: 0.72rem; left: 0.72rem;;}
-#u6{color: rgb(0, 0, 238);}
-#u5{height: 4.06rem; width: 5.42rem; position: absolute; top: -0.22rem; left: -0.37rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466 {height: 10.68rem; width: 6.48rem; position: absolute; top: 0rem; left: 0.36rem;; }
+#u-df626904-7bef-4629-af5f-29c5444a2466 .group.mixed .title { z-index: 2; }
+#u-df626904-7bef-4629-af5f-29c5444a2466 .group.mixed { text-align: left; }
 
-#u14{font-size: 0.48rem; line-height: 0.56rem; width: 5.04rem; position: absolute; top: 6.8rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
-#u13{line-height: 0.5600rem;;color: rgb(0, 0, 238);font-family: Roboto;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed{width: 6.48rem; height: 10.68rem; position: absolute; top: 0rem; left: 0rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution{position: absolute; top: 8.99rem; left: 2.38rem;;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-author{font-weight: bold;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-author-a-0{line-height: 0.1600rem;;}
 
-#u16{font-size: 0.28rem; line-height: 0.36rem; width: 5.04rem; position: absolute; top: 4.48rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: normal;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-publisher{line-height: 0.2500rem;;font-weight: normal;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-publisher-a-0{line-height: 0.1600rem;;font-weight: 500;}
 
-#u34{height: 9.95rem; width: 6.48rem; position: absolute; top: 4.33rem; left: 7.56rem;;line-height: normal;}
-#u34 .group.mixed .title { z-index: 2; }
-#u34 .group.mixed { text-align: left; }
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-title{font-size: 0.48rem; line-height: 0.56rem; width: 5.04rem; position: absolute; top: 7.71rem; left: 0.73rem;;letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-title-a-0{line-height: 0.4800rem;;font-family: Roboto;font-weight: 500;}
 
-#u33{height: 9.95rem; width: 6.48rem; position: absolute; top: 0rem; left: 0rem;;}
-#u27{overflow: hidden; height: 3.6rem; width: 5.04rem; position: absolute; top: 0.72rem; left: 0.72rem;;}
-#u22{color: rgb(0, 0, 238);}
-#u21{height: 4.37rem; width: 4.37rem; position: absolute; top: -0.32rem; left: 0.33rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-t-description{font-size: 0.28rem; line-height: 0.36rem; width: 5.04rem; position: absolute; left: 0.73rem; top: 5.39rem;;letter-spacing: normal;font-weight: normal;}
 
-#u30{font-size: 0.48rem; line-height: 0.56rem; width: 5.04rem; position: absolute; top: 7.52rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
-#u29{line-height: 0.5600rem;;color: rgb(0, 0, 238);font-family: Roboto;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover{overflow: hidden; height: 3.79rem; width: 5.04rem; position: absolute; top: 1.44rem; left: 0.73rem;;line-height: 0.2500rem;;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover-a-0{line-height: 0.1600rem;;font-weight: 500;}
+#u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover-a-0-img-0{height: 3.79rem; width: 5.05rem; position: absolute; top: -0.18rem; left: 0rem;;font-weight: normal;}
 
-#u32{font-size: 0.28rem; line-height: 0.36rem; width: 5.04rem; position: absolute; top: 4.48rem; left: 0.72rem;;color: rgb(0, 0, 0);letter-spacing: normal;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b {height: 13.21rem; width: 6.48rem; position: absolute; top: 5.34rem; left: 7.56rem;;line-height: 0.2500rem;; }
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b .group.mixed .title { z-index: 2; }
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b .group.mixed { text-align: left; }
 
-#u38{line-height: normal;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed{width: 6.48rem; height: 13.21rem; position: absolute; top: 0rem; left: 0rem;;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution{position: absolute; top: 1.44rem; left: 2.9rem;;font-weight: 500;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution-a-publisher{font-weight: normal;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution-a-publisher-a-0{line-height: 0.1600rem;;font-weight: 500;}
 
-}</style><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script><script>WebFont.load({"google":{"families":["Merriweather:300,900","Roboto:500,500italic,900,900italic"]}});</script><style type="text/css">html {font-family: 'Roboto';font-weight: 500;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-title{font-size: 0.48rem; line-height: 0.56rem; width: 5.04rem; position: absolute; top: 1.85rem; left: 0.72rem;;letter-spacing: 0.0100rem;;font-family: Merriweather;font-weight: 300;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-title-a-0{line-height: 0.4800rem;;font-family: Roboto;font-weight: 500;}
+
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-t-description{font-size: 0.28rem; line-height: 0.36rem; width: 5.04rem; position: absolute; left: 0.72rem; top: 3.69rem;;letter-spacing: normal;font-weight: normal;}
+
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover{overflow: hidden; height: 5.04rem; width: 5.04rem; position: absolute; top: 6.73rem; left: 0.72rem;;line-height: 0.2500rem;;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover-a-0{line-height: 0.1600rem;;font-weight: 500;}
+#u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover-a-0-img-0{height: 5.04rem; width: 5.04rem; position: absolute; top: -0.18rem; left: 0rem;;font-weight: normal;}
+
+#u49{line-height: 0.2500rem;;}
+
+}
+</style><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script><script id="web-font-loader">WebFont.load({"google":{"families":["Merriweather:300,900","Roboto:500,500italic,900,900italic"]}});</script><style type="text/css">html {font-family: 'Roboto';font-weight: 500;}
  .layout-system .hero {font-family: 'Merriweather';font-weight: 900;}
  .layout-system .title {font-family: 'Merriweather';}
  .layout-system .subtitle {font-family: 'Merriweather';}
@@ -102,189 +294,10 @@ html:not(.gss-ready) {
  a {font-family: 'Roboto';font-weight: 500;}
  .attribution {font-family: 'Roboto';font-weight: 500;text-transform: uppercase;letter-spacing: .03em;}
  .layout-system .quote {font-family: 'Merriweather';font-weight: 300;font-style: italic;}
- .layout-system .title {text-transform: uppercase;letter-spacing: .03em;}</style></head>
+ .layout-system .title {text-transform: uppercase;letter-spacing: .03em;}</style></head><script src="https://rawgit.com/scottjehl/picturefill/2.3.1/dist/picturefill.js"></script><body class="global-colors base-light-color-1 base" id="bodybase"><script src="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/assets/gss-init.js" id="bodybase-script-0"></script><div class="layout-system user artistic base-color w-assets sections" id="bodybase-div-0"><section class="title-text-cover df626904-7bef-4629-af5f-29c5444a2466 mixed w-aside w-title w-description w-text w-cover w-media narrow left flow_vertical flow_reversed align-left not_decorated stack" id="u-df626904-7bef-4629-af5f-29c5444a2466"><div class="mixed group" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed"><div class="text-color vfld attribution aside" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution"><div class="meta-highlight-color author aside" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-author"><a class="name" href="http://dribbble.com/dannpetty" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-author-a-0">Dann Petty</a></div><div class="textPop-color publisher aside" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-publisher"><a href="http://dribbble.com/" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-a-attribution-a-publisher-a-0">Dribbble</a></div></div><h1 class="title title-color vfld title" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-title"><a href="https://dribbble.com/shots/1934625-Epicurrence-Patches?list=following&offset=73" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-title-a-0">Epicurrence Patches</a></h1><p class="paragraph text-color vfld description text" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-t-description">I'm incredibly stoked about these Epicurrence patches that just came in! Even more excited about what they are going to be on ;) I might have a few leftover if interested in one. Only 20 more day...</p><div class="vfld cover media" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover"><a href="https://dribbble.com/shots/1934625-Epicurrence-Patches?list=following&offset=73" id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover-a-0"><picture id="u-df626904-7bef-4629-af5f-29c5444a2466-g-mixed-m-cover-a-0-img-0"> <!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cec2a5367b41fa59f3851737ffa22be4/passthrough.jpg?input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F3132%2Fscreenshots%2F1934625%2Fepic_badges.jpg&width=800&height=600" media="(min-width: 721px)" />
 
-  <body id="u39"><script src="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/assets/gss-init.js" id="u0"></script>
-    <div class="layout-system user artistic w-assets sections" id="u36">
-      <div index="bricks" kind="layout" style="position: relative" class="bricks layout" id="u35"><style type="text/gss" scoped="scoped" id="u2">margin-top:= 2md;
-margin-bottom:= 2md;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/layout/sizing/container.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/layout/h-align/distribute.gss;
-@if ::window[width] < $taylorW / 2{
-  h-gutter:= 0md;
-  v-gutter-min:= .5md;
-  v-gutter-max:= .5md;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/layout/columns/one.gss;
-}
-@else{
-  h-gutter:= 1md;
-  v-gutter-min:= 2md;
-  v-gutter-max:= 4.5md;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/layout/columns/two.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/layout/v-align/bricks.gss;
-}
-</style>
-        <section dataId="df626904-7bef-4629-af5f-29c5444a2466" kind="stack" class="title-text-cover mixed w-media w-aside w-decoration w-title w-description w-text global-colors narrow left flow_vertical flow_reversed align-left not_decorated softcolor1 stack" id="u18"><style type="text/gss" scoped="scoped" id="u4">@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/h-align/stretch.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/v-align/stretch.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/h-distribute/center.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/v-distribute/center.gss;
-inner-gap-horizontal:= 0;
-inner-gap-vertical:= 0;
-inner-gap:= 0;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/direction/vertical.gss;
-// h-emphasis: center;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/v-emphasis/center.gss;
-// name: title-text-cover;
-.group.mixed{
-  @v |-[inner-gap-top]-(.cover)-[inner-gap]-(.text)-[inner-gap]-(.title)-[inner-gap-bottom]-| !require;
-  @h |-[inner-gap-left]-(.title)-[inner-gap-right]-| !require;
-  @h |-[inner-gap-2-left]-(.text)-[inner-gap-2-right]-| !require;
-  @h |-[inner-gap-3-left]-(.cover)-[inner-gap-3-right]-| !require;
-  // direction: vertical;
-  inner-gap:= 2g;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/font-size/small.gss;
-  outer-gap-horizontal:= 0md;
-  outer-gap-vertical:= 0md;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-squeeze/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-squeeze/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-push/stretch.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-push/stretch.gss;
-  inner-gap-horizontal:= 2md;
-  inner-gap-vertical:= 2md;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-distribute/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-distribute/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-align/stretch.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-align/center.gss;
-  .media.cover{
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/v-focus/fit.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/h-focus/fit.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/v-align/center.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/h-align/center.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/sizing/image.gss;
-    desired-width:= 5md;
-    desired-height:= 5md;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/viewport/bound.gss;
-  }
-  // $class: not_decorated;
-  // reversed: true;
-  text-align: left;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-align-2/stretch.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-align-3/stretch.gss;
-}
-// $class: left;
-// wrapper: bricks;
-</style>
-          <div dataId="df626904-7bef-4629-af5f-29c5444a2466" index="mixed" class="mixed group" kind="group" id="u17">
-            <div dataId="df626904-7bef-4629-af5f-29c5444a2466" index="cover" kind="media" class="vfld vfl-trailer cover media" id="u11">
-              <a href="https://dribbble.com/shots/1934625-Epicurrence-Patches?list=following&offset=73" id="u6">
-                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/442db1eee88b0f81a5e534a233e527ad/gradientmap.jpg?stop1=0&stop2=1&color1=%23999&color2=%23eee&opacity=0.9&srgb=True&input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F3132%2Fscreenshots%2F1934625%2Fepic_badges.jpg&width=800&height=600" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/9bf2f66dcc31b7295e6b8dd136d40e62/gradientmap.jpg?stop1=0&stop2=1&color1=%23999&color2=%23eee&opacity=0.9&srgb=True&input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F3132%2Fscreenshots%2F1934625%2Fepic_badges.jpg&width=720&height=540 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/442db1eee88b0f81a5e534a233e527ad/gradientmap.jpg?stop1=0&stop2=1&color1=%23999&color2=%23eee&opacity=0.9&srgb=True&input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F3132%2Fscreenshots%2F1934625%2Fepic_badges.jpg&width=800&height=600 800w" sizes="(min-width: 1400px) 1400px, 100vw" id="u5" />
-              </a><style type="text/gss" scoped="scoped" id="u8">"scene"[x] == img[x] + 141 * image-scale !require;
-"scene"[y] == img[y] + 70 * image-scale !require;
-"scene"[width] ==  573 * image-scale !require;
-"scene"[height] == 459 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u10">overflow: hidden;
+<source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cec2a5367b41fa59f3851737ffa22be4/passthrough.jpg?input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F3132%2Fscreenshots%2F1934625%2Fepic_badges.jpg&width=800&height=600" media="(min-width: 1px)" />
+<!--[if IE 9]></video><![endif]--> <img srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cec2a5367b41fa59f3851737ffa22be4/passthrough.jpg?input=https%3A%2F%2Fd13yacurqjgara.cloudfront.net%2Fusers%2F3132%2Fscreenshots%2F1934625%2Fepic_badges.jpg&width=800&height=600" style="height: 100%; width: 100%;" /> </picture></a></div></div></section><section class="title-text-cover f0bfc19c-2180-4c79-aa9a-b06791845c8b mixed w-aside w-title w-description w-text w-cover w-media narrow right flow_vertical flow_unreversed align-left decorated stack" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b"><div class="mixed group" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed"><div class="text-color vfld attribution aside" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution"><div class="textPop-color publisher aside" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution-a-publisher"><a href="http://www.nytimes.com" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-a-attribution-a-publisher-a-0">Nytimes</a></div></div><h1 class="title title-color vfld title" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-title"><a href="http://www.nytimes.com/2015/02/23/arts/birdman-wins-best-picture-at-oscars-2015.html?hp&action=click&pgtype=Homepage&module=second-column-region&region=top-news&WT.nav=top-news&_r=0" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-title-a-0">'Birdman' Wins Best Picture at Oscars 2015</a></h1><p class="paragraph text-color vfld description text" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-t-description">LOS ANGELES - &#34;Birdman" took the top prize at the 87th Academy Awards on Sunday, winning best picture. Alejandro G. Iñárritu won the award for best director for that film as well. The other major awards were distributed among a handful of films. Julianne Moore won best actress for "Still Alice."</p><div class="vfld cover media" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover"><a href="http://www.nytimes.com/2015/02/23/arts/birdman-wins-best-picture-at-oscars-2015.html?hp&action=click&pgtype=Homepage&module=second-column-region&region=top-news&WT.nav=top-news&_r=0" id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover-a-0"><picture id="u-f0bfc19c-2180-4c79-aa9a-b06791845c8b-g-mixed-m-cover-a-0-img-0"> <!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/fe40f98940c8a69670777f0bf3c65825/passthrough.png?input=http%3A%2F%2Fstatic01.nyt.com%2Fimages%2Ficons%2Ft_logo_291_black.png&width=291&height=291" media="(min-width: 721px)" />
 
-@v |~("viewport")~| in(img) !strong900;
-@h |~("viewport")~| in(img) !strong900;
-
-image-min-scale = 0.3;
-image-max-scale = 1.5;
-
-/* Define image dimensions and ratio */
-image-scale == img[width] / 800 !require;
-img[height] == img[width] * (600/800) !require;
-
-/* enforce minimum scale*/
-img[height] >= 600 * image-min-scale !strong950;
-img[height] <= 600 * image-max-scale !strong950;</style></div>
-            <h1 dataId="df626904-7bef-4629-af5f-29c5444a2466" class="title title-color vfld vfld-leader title" index="title" id="u14">
-              <a href="https://dribbble.com/shots/1934625-Epicurrence-Patches?list=following&offset=73" id="u13">Epicurrence Patches</a>
-            </h1>
-            <p dataId="df626904-7bef-4629-af5f-29c5444a2466" kind="text" index="description" class="paragraph text-color vfld description text" id="u16">I'm incredibly stoked about these Epicurrence patches that just came in! Even more excited about what they are going to be on ;) I might have a few leftover if interested in one. Only 20 more day...</p>
-          </div>
-        </section>
-        <section dataId="f0bfc19c-2180-4c79-aa9a-b06791845c8b" kind="stack" class="title-text-cover mixed w-media w-aside w-decoration w-title w-description w-text global-colors narrow right flow_vertical flow_reversed align-left not_decorated softcolor2 stack" id="u34"><style type="text/gss" scoped="scoped" id="u20">@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/h-align/stretch.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/v-align/stretch.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/h-distribute/center.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/v-distribute/center.gss;
-inner-gap-horizontal:= 0;
-inner-gap-vertical:= 0;
-inner-gap:= 0;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/direction/vertical.gss;
-// h-emphasis: center;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/stack/v-emphasis/center.gss;
-// name: title-text-cover;
-.group.mixed{
-  @v |-[inner-gap-top]-(.cover)-[inner-gap]-(.text)-[inner-gap]-(.title)-[inner-gap-bottom]-| !require;
-  @h |-[inner-gap-left]-(.title)-[inner-gap-right]-| !require;
-  @h |-[inner-gap-2-left]-(.text)-[inner-gap-2-right]-| !require;
-  @h |-[inner-gap-3-left]-(.cover)-[inner-gap-3-right]-| !require;
-  // direction: vertical;
-  inner-gap:= 2g;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/font-size/small.gss;
-  outer-gap-horizontal:= 0md;
-  outer-gap-vertical:= 0md;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-squeeze/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-squeeze/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-push/stretch.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-push/stretch.gss;
-  inner-gap-horizontal:= 2md;
-  inner-gap-vertical:= 2md;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-distribute/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-distribute/center.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-align/stretch.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/v-align/center.gss;
-  .media.cover{
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/v-focus/fit.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/h-focus/fit.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/v-align/center.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/h-align/center.gss;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/sizing/image.gss;
-    desired-width:= 5md;
-    desired-height:= 5md;
-    @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/media/viewport/bound.gss;
-  }
-  // $class: not_decorated;
-  // reversed: true;
-  text-align: left;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-align-2/stretch.gss;
-  @import //cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/group/h-align-3/stretch.gss;
-}
-// $class: right;
-// wrapper: bricks;
-</style>
-          <div dataId="f0bfc19c-2180-4c79-aa9a-b06791845c8b" index="mixed" class="mixed group" kind="group" id="u33">
-            <div dataId="f0bfc19c-2180-4c79-aa9a-b06791845c8b" index="cover" kind="media" class="vfld vfl-trailer cover media" id="u27">
-              <a href="http://www.nytimes.com/2015/02/23/arts/birdman-wins-best-picture-at-oscars-2015.html?hp&action=click&pgtype=Homepage&module=second-column-region&region=top-news&WT.nav=top-news&_r=0" id="u22">
-                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/49cbc78d3c0b22bf7aa9b2fc5ae1cdfc/gradientmap.png?stop1=0.2&stop2=0.8&color2=%23222&opacity=0.6&srgb=True&input=http%3A%2F%2Fstatic01.nyt.com%2Fimages%2Ficons%2Ft_logo_291_black.png&width=291&height=291" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/49cbc78d3c0b22bf7aa9b2fc5ae1cdfc/gradientmap.png?stop1=0.2&stop2=0.8&color2=%23222&opacity=0.6&srgb=True&input=http%3A%2F%2Fstatic01.nyt.com%2Fimages%2Ficons%2Ft_logo_291_black.png&width=291&height=291 291w" sizes="(min-width: 1400px) 1400px, 100vw" id="u21" />
-              </a><style type="text/gss" scoped="scoped" id="u24">"scene"[x] == img[x] + 73 * image-scale !require;
-"scene"[y] == img[y] + 38 * image-scale !require;
-"scene"[width] ==  147 * image-scale !require;
-"scene"[height] == 208 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u26">overflow: hidden;
-
-@v |~("viewport")~| in(img) !strong900;
-@h |~("viewport")~| in(img) !strong900;
-
-image-min-scale = 0.3;
-image-max-scale = 1.5;
-
-/* Define image dimensions and ratio */
-image-scale == img[width] / 291 !require;
-img[height] == img[width] * (291/291) !require;
-
-/* enforce minimum scale*/
-img[height] >= 291 * image-min-scale !strong950;
-img[height] <= 291 * image-max-scale !strong950;</style></div>
-            <h1 dataId="f0bfc19c-2180-4c79-aa9a-b06791845c8b" class="title title-color vfld vfld-leader title" index="title" id="u30">
-              <a href="http://www.nytimes.com/2015/02/23/arts/birdman-wins-best-picture-at-oscars-2015.html?hp&action=click&pgtype=Homepage&module=second-column-region&region=top-news&WT.nav=top-news&_r=0" id="u29">'Birdman' Wins Best Picture at Oscars 2015</a>
-            </h1>
-            <p dataId="f0bfc19c-2180-4c79-aa9a-b06791845c8b" kind="text" index="description" class="paragraph text-color vfld description text" id="u32">LOS ANGELES - &#34;Birdman" took the top prize at the 87th Academy Awards on Sunday, winning best picture. Alejandro G. Iñárritu won the award for best director for that film as well. The other major awards were distributed among a handful of films. Julianne Moore won best actress for "Still Alice."</p>
-          </div>
-        </section>
-      </div>
-    </div>
-    <div id="u38">
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.78/src/layouts/shared/assets/gss/variables.gss" />
-    </div>
-  </body>
-
-</html>
+<source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/fe40f98940c8a69670777f0bf3c65825/passthrough.png?input=http%3A%2F%2Fstatic01.nyt.com%2Fimages%2Ficons%2Ft_logo_291_black.png&width=291&height=291" media="(min-width: 1px)" />
+<!--[if IE 9]></video><![endif]--> <img srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/fe40f98940c8a69670777f0bf3c65825/passthrough.png?input=http%3A%2F%2Fstatic01.nyt.com%2Fimages%2Ficons%2Ft_logo_291_black.png&width=291&height=291" style="height: 100%; width: 100%;" /> </picture></a></div></div></section></div><div id="u49"><link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.1.7/src/layouts/shared/assets/gss/variables.gss"/></div></body></html>

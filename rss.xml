@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Grid Site]]></title>
+        <description><![CDATA[Grid Site]]></description>
+        <link>http://github.com/dylang/node-rss</link>
+        <generator>The Grid</generator>
+        <lastBuildDate>Mon, 31 Aug 2015 14:42:49 GMT</lastBuildDate>
+        <atom:link href="undefinedrss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Leica Mmm]]></title>
+            <description><![CDATA[<article><h1>Leica Mmm</h1><img src="http://36.media.tumblr.com/ae86866e73a35c77ce3ad0c093bd037f/tumblr_ntcnnkrjZB1qew4muo1_1280.jpg"></article>]]></description>
+            <link>undefinedleica-mmm/index.html</link>
+            <guid isPermaLink="false">badea647-2be9-4468-aeb6-df969285cb4c</guid>
+            <pubDate>Mon, 31 Aug 2015 14:42:40 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

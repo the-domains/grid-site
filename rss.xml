@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title><![CDATA[Grid Site]]></title>
         <description><![CDATA[Grid Site]]></description>
         <link>https://thegrid.ai/grid-site/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Fri, 18 Sep 2015 15:21:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Oct 2015 16:03:49 GMT</lastBuildDate>
         <atom:link href="https://thegrid.ai/grid-site/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[A Collection of Nice Things]]></title>
-            <description><![CDATA[<article><h1>A Collection of Nice Things</h1><p>Thanks Dieter</p><img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/3448d066-4288-49b6-8a2a-4f18eade7135.jpg"></article>]]></description>
+            <title><![CDATA[These Are Some Nice Things.]]></title>
+            <description><![CDATA[<article><h1>These Are Some Nice Things.</h1><p>Thanks Dieter</p><img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/3448d066-4288-49b6-8a2a-4f18eade7135.jpg"></article>]]></description>
             <link>http://theworldsbest.com</link>
             <guid isPermaLink="false">151c7247-f7e2-47aa-a34d-fa6fe7214345</guid>
             <pubDate>Mon, 31 Aug 2015 14:42:46 GMT</pubDate>
@@ -39,7 +38,7 @@
             <description><![CDATA[<img src="http://40.media.tumblr.com/0e3b9fc070733435ceea2dadf379ef1b/tumblr_n7clo4RgXi1qlwlsko1_1280.jpg">]]></description>
             <link>https://thegrid.ai/grid-site/29bc4285-b5c1-4c41-830c-62b29c38127b/index.html</link>
             <guid isPermaLink="false">29bc4285-b5c1-4c41-830c-62b29c38127b</guid>
-            <pubDate>Mon, 31 Aug 2015 14:42:43 GMT</pubDate>
+            <pubDate>Mon, 26 Oct 2015 16:03:45 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Charles and Ray Eames // Eames Lounge Chair : Sum of Parts]]></title>

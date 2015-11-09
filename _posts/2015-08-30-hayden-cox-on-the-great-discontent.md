@@ -1,11 +1,10 @@
 ---
-author: []
-related: []
-publisher:
-  url: 'https://thegreatdiscontent.com'
-  name: The Great Discontent
-  favicon: 'https://thegreatdiscontent.com/favicon.ico'
-  domain: thegreatdiscontent.com
+inFeed: true
+hasPage: false
+inNav: false
+isBasedOnUrl: 'https://thegreatdiscontent.com/interview/hayden-cox'
+inLanguage: en
+starred: false
 keywords:
   - surfboard
   - boards
@@ -18,14 +17,20 @@ keywords:
   - haydenshapes
   - creative
 description: 'Hayden Cox is an Australian surfboard designer who got into the business of making surfboards at the age of 15 and continues to run his eponymous brand, Haydenshapes, today.'
-inLanguage: en
+datePublished: '2015-11-09T22:19:34.074Z'
+dateModified: '2015-11-09T22:19:28.979Z'
+author: []
+related: []
 app_links: []
-isBasedOnUrl: 'https://thegreatdiscontent.com/interview/hayden-cox'
-title: Hayden Cox on The Great Discontent
-datePublished: '2015-08-31T14:42:42.132Z'
-dateModified: '2015-08-30T01:57:22.458Z'
+title: Cox
 sourcePath: _posts/2015-08-30-hayden-cox-on-the-great-discontent.md
 published: true
+authors: []
+publisher:
+  name: The Great Discontent
+  domain: thegreatdiscontent.com
+  url: 'https://thegreatdiscontent.com'
+  favicon: 'https://thegreatdiscontent.com/favicon.ico'
 _context: 'http://schema.org'
 _type: MediaObject
 

@@ -1,8 +1,7 @@
 ---
 inFeed: true
-hasPage: false
-inNav: false
-isBasedOnUrl: 'https://thegreatdiscontent.com/interview/hayden-cox'
+hasPage: true
+inNav: true
 inLanguage: en
 starred: false
 keywords:
@@ -17,8 +16,8 @@ keywords:
   - haydenshapes
   - creative
 description: 'Hayden Cox is an Australian surfboard designer who got into the business of making surfboards at the age of 15 and continues to run his eponymous brand, Haydenshapes, today.'
-datePublished: '2015-11-09T22:19:34.074Z'
-dateModified: '2015-11-09T22:19:28.979Z'
+datePublished: '2015-11-10T02:27:35.416Z'
+dateModified: '2015-11-10T02:27:32.243Z'
 author: []
 related: []
 app_links: []
@@ -31,8 +30,9 @@ publisher:
   domain: thegreatdiscontent.com
   url: 'https://thegreatdiscontent.com'
   favicon: 'https://thegreatdiscontent.com/favicon.ico'
+url: cox/index.html
 _context: 'http://schema.org'
 _type: MediaObject
 
 ---
-<article style=""><h1>Hayden Cox on The Great Discontent</h1><p>Hayden Cox is an Australian surfboard designer who got into the business of making surfboards at the age of 15 and continues to run his eponymous brand&amp;comma; Haydenshapes&amp;comma; today&amp;period;</p><img src="https://coyote.imgix.net/184-hayden-cox/hayden-cox-toby-pete-hero.jpg?w=1200" /></article>
+<article style=""><h1>Hayden Cox on The Great Discontent</h1><p>Hayden Cox is an Australian surfboard designer who got into the business of making surfboards at the age of 15 and continues to run his eponymous brand, Haydenshapes, today.</p><img src="https://coyote.imgix.net/184-hayden-cox/hayden-cox-toby-pete-hero.jpg?w=1200" /></article>

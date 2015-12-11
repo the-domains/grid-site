@@ -17,8 +17,8 @@ keywords:
   - autodidact
   - tommymacdonald207
 description: 'Instagram @conorcoghlan // Etsy - ConorCoghlanDesign // Pinterest - conorkcoghlan The bow spring chair was designed and fabricated as part of a furniture making workshop at Harvard and MIT. I was interested in how the arms and legs of the chair could work in unison as a type of double bow spring structure - becoming extremely strong under direct loading, yet flexible and responsive to the shifting load of the user.'
-datePublished: '2015-12-11T15:57:13.066Z'
-dateModified: '2015-12-11T15:57:02.366Z'
+datePublished: '2015-12-11T15:59:14.496Z'
+dateModified: '2015-12-11T15:59:09.800Z'
 author:
   - name: Conor Coghlan
     url: 'https://www.youtube.com/user/conorcoghlan'
@@ -35,7 +35,7 @@ app_links:
     package: com.google.android.youtube
   - url: 'http://www.youtube.com/watch?v=HiAfP1PBcoo&feature=applinks'
     type: web
-title: How to Make a Chair
+title: How We Made the Bow String Chair
 sourcePath: _posts/2015-08-30-how-to-make-a-chair.md
 published: true
 authors: []

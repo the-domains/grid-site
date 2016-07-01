@@ -18,8 +18,8 @@ description: >-
   Hayden Cox is an Australian surfboard designer who got into the business of
   making surfboards at the age of 15 and continues to run his eponymous brand,
   Haydenshapes, today.
-datePublished: '2016-07-01T18:46:46.038Z'
-dateModified: '2016-07-01T18:46:45.661Z'
+datePublished: '2016-07-01T18:46:51.531Z'
+dateModified: '2016-07-01T18:46:51.142Z'
 author:
   - name: ''
     url: ''
@@ -33,7 +33,7 @@ publisher:
   domain: thegreatdiscontent.com
   url: 'https://thegreatdiscontent.com'
   favicon: 'https://thegreatdiscontent.com/favicon.ico'
-starred: true
+starred: false
 url: cox/index.html
 _context: 'http://schema.org'
 _type: MediaObject

@@ -2,6 +2,7 @@ name: Grid Site
 favicon: null
 layout_spectrum: 0.11475
 typography_spectrum: 0.5
+style: the-composer
 cta:
   domain: null
   bucket: null
